@@ -1,4 +1,8 @@
-# Лабораторная работа: Установка Ubuntu в VirtualBox
+# Лабораторная работа: Установка Ubuntu в VirtualBox  
+
+**Дата:** 22.09.2025  
+**Студент:** Alexandr Pitropov  
+**Группа:** I2302  
 
 ## 1. Установка VirtualBox
 Запуск инсталлятора VirtualBox и установка с настройками по умолчанию.
@@ -77,18 +81,3 @@
 Обновление системы через терминал:
 ```bash
 sudo apt update && sudo apt upgrade -y
-```
-
-![image](C:/ACIIT/LAB1/screenshotslab1/screenshot17.jpg)
-
-## 7. Установка Guest Additions
-Подключение образа «Guest Additions» через меню VirtualBox и запуск скрипта:
-```bash
-sudo apt install -y build-essential dkms linux-headers-$(uname -r)
-cd /media/$USER/VBox_GAs_*
-sudo ./VBoxLinuxAdditions.run
-sudo reboot
-```
-
-## Выводы
-В ходе лабораторной работы была установлена и настроена виртуальная машина с Ubuntu 24.04.3 LTS в VirtualBox. Все основные параметры системы заданы, выполнены обновления и подключены дополнения гостевой ОС. Виртуальная машина готова к дальнейшему использованию для выполнения лабораторных и проектных задач.
